@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-service
+  description: A simple Node.js service example
+  annotations:
+    github.com/project-slug: 'anuragpachauri/test-service'
+    argocd/app-name: 'test-app'
+    jira.com/project-key: 'BL'
+    statuspage.io/components: mystatuspageinstance:20h4dcgndfkn,l86wp1rcb8kl
+    datadoghq.com/dashboard-url: https://p.us5.datadoghq.com/sb/85cfa16b-6394-11ef-b68e-a2c6e293d47f-cc6a1c68f238e7e554194ebfcc44ec54
+    datadoghq.com/graph-token: 6a3d1264591ed5b19285575446fe64ddf5cea3c83420c19d8dcfc31b1ac3995f
+    datadoghq.com/site: us5.datadoghq.com
+    azure.com/resource-tag: name:postgres
+    sonarqube.org/project-key: anuragpachauri_test-app
+    backstage.io/kubernetes-id: local
+    backstage.io/kubernetes-namespace: "dev-backstgae"
+
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests
