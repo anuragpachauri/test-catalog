@@ -14,7 +14,7 @@ metadata:
     azure.com/resource-tag: name:postgres
     sonarqube.org/project-key: anuragpachauri_test-app
     backstage.io/kubernetes-id: local
-    backstage.io/kubernetes-namespace: "dev-backstgae"
+    backstage.io/kubernetes-label-selector: 'app=nginx'
 
 spec:
   type: service
